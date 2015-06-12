@@ -159,3 +159,35 @@
         </div>
     </div>
 </div>
+
+
+<div ng-controller="ListBoxCtrl">
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area" style="height: 300px;">
+                <div class="control">
+                    <table><tr>
+                        <td><div class="ctrllabel">Select a section</div>
+                            <ul id="bookSelect" ej-listbox e-datasource="dataList" e-value="value">
+                            </ul></td>
+                        <td id="binding"> <div>
+                            <input type="text" id="dropValue" class="input ejinputtext" ng-model="value" />
+                            <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 4px;">Note:Two Way Angular Support</span></h6>
+                        </div></td>
+                    </tr></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<div class="content-container-fluid" ng-controller="MenuCtrl">
+    <div class="row">
+        <div class="cols-sample-area">
+            <ul id="menu" ej-menu e-fields-dataSource="dataList" e-fields-id="id" e-fields-parentId="parentId"
+                e-fields-text="text" e-fields-spriteCssClass="sprite">
+            </ul>
+        </div>
+    </div>
+</div>
