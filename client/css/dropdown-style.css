@@ -1,0 +1,21 @@
+.control {
+    margin-left: 20px;
+}
+
+.ctrllabel {
+    padding-bottom: 3px;
+}
+
+#dropValue {
+    text-indent: 10px;
+}
+
+#control #bookSelect_input_wrapper {
+    width: 70%;
+}
+
+.input {
+    height: 26px;
+    text-indent: 10px;
+    width: 67%;
+}

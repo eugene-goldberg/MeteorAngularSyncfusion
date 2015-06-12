@@ -1,0 +1,161 @@
+
+<div ng-controller="EditorsCtrl">
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame" style="width: 50%; height: 175px">
+                    <div id="control" style="float: left; width: 100%">
+                        <table class="sample" style="margin: auto">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Numeric Textbox</label>
+                                </td>
+                                <td>
+                                    <input id="numeric" type="text" ej-numerictextbox e-value="nvalue" />
+                                </td>
+                                <td>
+                                    <span>Value</span>
+                                </td>
+                                <td>
+                                    <input type="text" class="input ejinputtext" ng-model="nvalue" /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Percentage Textbox</label>
+                                </td>
+                                <td>
+                                    <input id="percent" type="text" ej-percentagetextbox e-value="pvalue" />
+                                </td>
+                                <td>
+                                    <span>Value</span>
+                                </td>
+                                <td>
+                                    <input type="text" class="input ejinputtext" ng-model="pvalue" /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Currency Textbox</label>
+                                </td>
+                                <td>
+                                    <input id="currency" type="text" ej-currencytextbox e-value="cvalue" />
+                                </td>
+                                <td>
+                                    <span>Value</span>
+                                </td>
+                                <td>
+                                    <input type="text" class="input ejinputtext" ng-model="cvalue" /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        MaskEdit Textbox</label>
+                                </td>
+                                <td>
+                                    <input id="maskedit" type="text" ej-maskedit e-value="mvalue" e-inputmode="ej.InputMode.Text" e-maskformat='99-999' />
+                                </td>
+                                <td>
+                                    <span>Value</span>
+                                </td>
+                                <td>
+                                    <input id="maskedit2" type="text" ej-maskedit e-value="mvalue" e-inputmode="ej.InputMode.Text" e-maskformat='99-999' /><br />
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h6><span style="font-style: italic; font-weight: normal; margin-left: 5%; position: absolute; margin-top: 15px;">Note:Two Way Angular Support</span></h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div ng-controller="PhoneListCtrl">
+        <div class="content-container-fluid">
+            <div class="row">
+                <div class="cols-sample-area">
+                    <div id="Grid" ej-grid e-datasource="data" e-selectedrowindex="selectedRow" e-allowgrouping="true" e-pagesettings-pagesize="4" e-pagesettings-currentpage="page" e-allowsorting="true" e-allowpaging="true" e-actionbegin="actionBegin">
+                        <div e-columns>
+                            <div e-column e-field="EmployeeID" e-headertext="Employee ID" e-textalign="right" e-width="90"></div>
+                            <div e-column e-field="LastName" e-headertext="Last Name" e-textalign="left" e-width="90"></div>
+                            <div e-column e-field="FirstName" e-headertext="FirstName" e-textalign="left" e-width="90"></div>
+                            <div e-column e-field="Title" e-headertext="Title" e-textalign="left" e-width="90"></div>
+                            <div e-column e-field="City" e-headertext="City" e-textalign="left" e-width="90"></div>
+                            <div e-column e-field="Country" e-headertext="Country" e-textalign="left" e-width="90"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="sampleProperties">
+                    <div class="prop-grid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                Selected Row
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" id="selectedRow" name="name" class="e-ejinputtext" value="" ej-numerictextbox e-value="selectedRow"  e-maxvalue="3" e-minValue ="-1" e-width="100px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                Current Page
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" name="name" class="e-ejinputtext" value="" ej-numerictextbox e-value="page"  e-maxvalue="4" e-minValue ="1" e-width="100px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-controller="DropDownCtrl">
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame" style="width: 50%; height: 27px">
+                    <span>Select a section</span>
+                    <div>
+                        <div id="control" style="float: left; width: 45%">
+                            <input id="bookSelect" ej-dropdownlist e-datasource="dataList" e-value="value" />
+                            <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 4px;">Note:Two Way Angular Support</span></h6>
+                        </div>
+                    </div>
+                    <div id="binding" style="float: right; margin: auto; width: 45%">
+                        <input type="text" id="dropValue" class="input ejinputtext" ng-model="value" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="content-container-fluid" ng-controller="DatePickerCtrl">
+    <div class="row">
+        <div class="cols-sample-area">
+            <div class="frame" style="width: 50%;height:56px">
+                <label>Select Show Date </label>
+                <div>
+                    <div id="control" style="float: left;width: 45%;">
+                        <input id="datepick" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 4px;">Note:Two Way Angular Support</span></h6>
+                    </div>
+                    <div id="binding" style="float: right;width: 45%;">
+                        <input id="datepick1" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
